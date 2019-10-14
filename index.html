@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
     <title>Rdio - Luke Chesser</title>
 
     <link
@@ -17,27 +21,54 @@
     <div class="container">
       <header>
         <div class="wrapper">
-          <div class="logo-search">
-            <img class="pull-left" src="img/logo.png" />
-          </div>
-
-          <form method="POST" action="index.html">
-            <input type="search" required class="search" />
-            <input
-              type="submit"
-              name="submit"
-              value="Rechercher"
-              class="submit"
-            />
-          </form>
-          <div class="user">
-            <a href="#">Luke Chesser</a>
+          <div class="row">
+            <div class="col">
+              <div class="logo-search">
+                <img class="pull-left" src="img/logo.png" />
+              </div>
+            </div>
+            <div id="searchBar" class="col">
+              <form method="POST" action="index.html">
+                <input type="search" required class="search" />
+                <input
+                  type="submit"
+                  name="submit"
+                  value="Rechercher"
+                  class="submit"
+                />
+              </form>
+            </div>
+            <div class="col">
+              <div class="user dropdown">
+                <a
+                  href="#"
+                  class="dropdown-toggle"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Luke Chesser</a
+                >
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <h5 class="dropdown-header">Browse</h5>
+                  <a class=" dropdown-item" href="#">Heavy Rotation</a>
+                  <a class=" dropdown-item" href="#">Recent Activity</a>
+                  <a class=" dropdown-item" href="#">Top Charts</a>
+                  <a class=" dropdown-item" href="#">New Releases</a>
+                  <div class="dropdown-divider"></div>
+                  <h5 class="dropdown-header">Your music</h5>
+                  <a class="dropdown-item" href="#">Collection</a>
+                  <a class="dropdown-item" href="#">History</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </header>
 
       <div class="row">
-        <div class="col-2">
+        <div class="col-2 d-none d-lg-block">
           <aside>
             <h3>Browse</h3>
             <nav class="browse">
@@ -68,32 +99,44 @@
                   <h1>Luke Chesser</h1>
                   <p>
                     Montreal, Quebec, Canada
-                    <a href="https://www.facebook.com/" target="_blank"
+                    <a class="socialIcon" href="https://www.facebook.com/" target="_blank"
                       ><img class="share" src="img/icon/fb.png"/></a
-                    ><a href="https://twitter.com/" target="_blank"
+                    ><a class="socialIcon" href="https://twitter.com/" target="_blank"
                       ><img class="share" src="img/icon/twitter.png"
                     /></a>
                   </p>
                 </div>
               </div>
               <div class="stats-links">
-                <section class="stats">
-                  <span>2 Playlists</span>
-                  <span>4 Reviews</span>
-                  <span>6 Followers</span>
-                  <span>13 Following</span>
-                </section>
-                <div class="links">
-                  <div>
-                    <a href="#">Collection</a>
-                    <a href="#">History</a>
+                <div class="row">
+                  <div class="col">
+                    <section class="stats">
+                      <span>2 Playlists</span>
+                      <span>4 Reviews</span>
+                      <span>6 Followers</span>
+                      <span>13 Following</span>
+                    </section>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <div class="links">
+                      <div>
+                        <a href="#">Collection</a>
+                        <a href="#">History</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </header>
-            <h2>Top Album</h2>
-            <div>
-              <a class="station" href="#">Start Station</a>
+            <div class="row my-3">
+              <div class="col">
+                <h2>Top Album</h2>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                <div>
+                  <a class="station" href="#">Start Station</a>
+                </div>
+              </div>
             </div>
             <section id="albums">
               <div class="row">
