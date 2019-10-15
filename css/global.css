@@ -1,3 +1,22 @@
+* {
+  font-size: 100%;
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  * {
+    font-size: 110%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  * {
+    font-size: 140%;
+  }
+}
+@media screen and (min-width: 992px) {
+  * {
+    font-size: 100%;
+  }
+}
+
 @font-face {
   font-family: "My Lucida";
   src: url("../font/LucidaGrande.ttf");
